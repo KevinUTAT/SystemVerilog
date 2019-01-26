@@ -1,0 +1,22 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst qsyscpu.cpu_0 -pg 1 -lvl 2 -y 170
+preplace inst qsyscpu.clk_0 -pg 1 -lvl 1 -y 170
+preplace inst qsyscpu.SW -pg 1 -lvl 3 -y 210
+preplace inst qsyscpu -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst qsyscpu.LED -pg 1 -lvl 3 -y 30
+preplace inst qsyscpu.quad_hex_decode_0 -pg 1 -lvl 3 -y 310
+preplace inst qsyscpu.onchip_memory2_0 -pg 1 -lvl 3 -y 130
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)quad_hex_decode_0.hex1,(SLAVE)qsyscpu.quad_hex_decode_0_hex1) 1 0 3 NJ 380 NJ 380 NJ
+preplace netloc FAN_OUT<net_container>qsyscpu</net_container>(MASTER)clk_0.clk_reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)SW.reset,(SLAVE)LED.reset,(SLAVE)quad_hex_decode_0.reset,(SLAVE)cpu_0.reset) 1 1 2 360 440 590
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)LED.external_connection,(SLAVE)qsyscpu.led_external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)qsyscpu.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)qsyscpu.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)quad_hex_decode_0.hex2,(SLAVE)qsyscpu.quad_hex_decode_0_hex2) 1 0 3 NJ 400 NJ 400 NJ
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)quad_hex_decode_0.hex3,(SLAVE)qsyscpu.quad_hex_decode_0_hex3) 1 0 3 NJ 420 NJ 420 NJ
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)SW.external_connection,(SLAVE)qsyscpu.sw_external_connection) 1 0 3 NJ 240 NJ 240 NJ
+preplace netloc EXPORT<net_container>qsyscpu</net_container>(SLAVE)qsyscpu.quad_hex_decode_0_hex0,(SLAVE)quad_hex_decode_0.hex0) 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc FAN_OUT<net_container>qsyscpu</net_container>(SLAVE)cpu_0.clock,(SLAVE)quad_hex_decode_0.clock,(SLAVE)LED.clk,(SLAVE)onchip_memory2_0.clk1,(MASTER)clk_0.clk,(SLAVE)SW.clk) 1 1 2 380 260 570
+preplace netloc FAN_OUT<net_container>qsyscpu</net_container>(MASTER)cpu_0.avalon_master,(SLAVE)onchip_memory2_0.s1,(SLAVE)quad_hex_decode_0.avalon_slave,(SLAVE)LED.s1,(SLAVE)SW.s1) 1 2 1 610
+levelinfo -pg 1 0 150 820
+levelinfo -hier qsyscpu 160 190 410 660 810

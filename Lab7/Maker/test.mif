@@ -1,0 +1,11 @@
+DEPTH = 4;
+WIDTH = 16;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+0000 : 0910;	-- mvi r0, 9
+0001 : 0630;	-- mvi r1, 6
+0002 : 0112;	-- subi r0, 1
+0003 : 0132;	-- subi r1, 1
+END;

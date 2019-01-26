@@ -1,0 +1,14 @@
+
+State Machine - |de1soc_top|control:the_control|state
+Name state.die state.wait_enter_2 state.wait_2 state.over state.equal state.under state.compare state.wait_enter_1 state.numGen state.wait_1 state.rst 
+state.rst 0 0 0 0 0 0 0 0 0 0 0 
+state.wait_1 0 0 0 0 0 0 0 0 0 1 1 
+state.numGen 0 0 0 0 0 0 0 0 1 0 1 
+state.wait_enter_1 0 0 0 0 0 0 0 1 0 0 1 
+state.compare 0 0 0 0 0 0 1 0 0 0 1 
+state.under 0 0 0 0 0 1 0 0 0 0 1 
+state.equal 0 0 0 0 1 0 0 0 0 0 1 
+state.over 0 0 0 1 0 0 0 0 0 0 1 
+state.wait_2 0 0 1 0 0 0 0 0 0 0 1 
+state.wait_enter_2 0 1 0 0 0 0 0 0 0 0 1 
+state.die 1 0 0 0 0 0 0 0 0 0 1 

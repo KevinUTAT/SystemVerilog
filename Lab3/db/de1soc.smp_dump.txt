@@ -1,0 +1,29 @@
+
+State Machine - |de1soc_top|line_drawer_control:LDA_C|state
+Name state.done_state state.done_pixel state.inc state.error state.draw_pixel state.init state.set_var state.swap_10 state.swap_xy state.branch2 state.check_x0x1_steep state.branch state.check_steep state.reset 
+state.reset 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.check_steep 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.branch 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.check_x0x1_steep 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.branch2 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.swap_xy 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.swap_10 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.set_var 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.init 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.draw_pixel 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.error 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.inc 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.done_pixel 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.done_state 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |de1soc_top|UI_control:UIC|state
+Name state.wait_GO state.key_wait_colour state.wait_colour state.key_wait_y state.wait_y state.key_wait_x state.wait_x state.reset state.lets_GO 
+state.reset 0 0 0 0 0 0 0 0 0 
+state.wait_x 0 0 0 0 0 0 1 1 0 
+state.key_wait_x 0 0 0 0 0 1 0 1 0 
+state.wait_y 0 0 0 0 1 0 0 1 0 
+state.key_wait_y 0 0 0 1 0 0 0 1 0 
+state.wait_colour 0 0 1 0 0 0 0 1 0 
+state.key_wait_colour 0 1 0 0 0 0 0 1 0 
+state.wait_GO 1 0 0 0 0 0 0 1 0 
+state.lets_GO 0 0 0 0 0 0 0 1 1 

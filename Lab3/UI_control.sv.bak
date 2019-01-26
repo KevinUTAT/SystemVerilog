@@ -1,0 +1,22 @@
+// this is the control path of User interface
+// this controls Line_drawer as one module
+
+module UI_control
+(
+	// interface to the DE1-Soc board
+	input setX,
+	input setY,
+	input setCol,
+	input GO,
+	input [8:0] VAL,
+	
+	//interface to the line_drswer
+	input done,
+	
+	output start,
+	output [8:0] x0,
+	output [7:0] y0,
+	output [8:0] x1,
+	output [7:0] y1,
+	output [2:0] colour
+);

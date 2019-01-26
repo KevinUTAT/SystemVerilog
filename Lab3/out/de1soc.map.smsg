@@ -1,0 +1,7 @@
+Info (10281): Verilog HDL Declaration information at de1soc_top.sv(10): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Dev/ECE342/Lab3/de1soc_top.sv Line: 10
+Info (10281): Verilog HDL Declaration information at de1soc_top.sv(11): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Dev/ECE342/Lab3/de1soc_top.sv Line: 11
+Info (10281): Verilog HDL Declaration information at de1soc_top.sv(12): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Dev/ECE342/Lab3/de1soc_top.sv Line: 12
+Info (10281): Verilog HDL Declaration information at de1soc_top.sv(13): object "HEX3" differs only in case from object "hex3" in the same scope File: C:/Dev/ECE342/Lab3/de1soc_top.sv Line: 13
+Info (10281): Verilog HDL Declaration information at de1soc_top.sv(14): object "HEX4" differs only in case from object "hex4" in the same scope File: C:/Dev/ECE342/Lab3/de1soc_top.sv Line: 14
+Warning (10268): Verilog HDL information at line_drawer_data.sv(86): always construct contains both blocking and non-blocking assignments File: C:/Dev/ECE342/Lab3/line_drawer_data.sv Line: 86
+Warning (10268): Verilog HDL information at line_drawer_data.sv(181): always construct contains both blocking and non-blocking assignments File: C:/Dev/ECE342/Lab3/line_drawer_data.sv Line: 181

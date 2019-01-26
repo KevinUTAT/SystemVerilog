@@ -1,0 +1,125 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Dev/ECE342/Lab2/Part2
+vCarrySaveAdder
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1517185828
+!i10b 1
+!s100 cVhXJ[hUdoTbD`>3bj]FY1
+I^XjPhMgKjR@;X42ARH3B?0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 CarrySaveMultiplier_sv_unit
+S1
+R0
+w1517185820
+Z4 8CarrySaveMultiplier.sv
+Z5 FCarrySaveMultiplier.sv
+L0 2
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1517185828.000000
+!s107 CarrySaveMultiplier.sv|
+Z7 !s90 -reportprogress|300|CarrySaveMultiplier.sv|
+!i113 1
+n@carry@save@adder
+vCarrySaveMultiplier
+R1
+Z8 !s110 1517190521
+!i10b 1
+!s100 ;MnnI=fQAL1kfAScJRZ8X2
+I0gk<J]@@DN>ck]XdlWETF3
+R2
+R3
+S1
+R0
+Z9 w1517190506
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+Z10 !s108 1517190521.000000
+Z11 !s107 CarrySaveMultiplier.sv|
+R7
+!i113 1
+n@carry@save@multiplier
+vCSA_row
+R1
+R8
+!i10b 1
+!s100 cR5BD:f]g@N8K57HWIR3L2
+Ib@DA3ZRV1T:fOGj_97?em3
+R2
+R3
+S1
+R0
+R9
+R4
+R5
+L0 62
+R6
+r1
+!s85 0
+31
+R10
+R11
+R7
+!i113 1
+n@c@s@a_row
+vCSM_tb
+R1
+!s110 1517190018
+!i10b 1
+!s100 l:bb7YWdj>d2cWA>oF0C22
+IW0iE:RoRSXAdV`g458PK03
+R2
+!s105 CSM_tb_sv_unit
+S1
+R0
+w1517188225
+8CSM_tb.sv
+FCSM_tb.sv
+L0 4
+R6
+r1
+!s85 0
+31
+!s108 1517190018.000000
+!s107 CSM_tb.sv|
+!s90 -reportprogress|300|CSM_tb.sv|
+!i113 1
+n@c@s@m_tb
+vFullAdder
+R1
+!s110 1517185746
+!i10b 1
+!s100 iQHF]]K7@^P<khg9Ig4eG2
+I>R8QKP7i@>e2^H41zNUS11
+R2
+!s105 FullAdder_sv_unit
+S1
+R0
+w1517017463
+8FullAdder.sv
+FFullAdder.sv
+L0 4
+R6
+r1
+!s85 0
+31
+!s108 1517185745.000000
+!s107 FullAdder.sv|
+!s90 -reportprogress|300|FullAdder.sv|
+!i113 1
+n@full@adder

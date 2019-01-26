@@ -1,0 +1,6 @@
+// this is the control FSM of line_drawer
+
+module line_drawer_control
+(
+
+)

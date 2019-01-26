@@ -1,0 +1,26 @@
+
+State Machine - |de1soc_top|nios_system:u0|nios_system_nios2_processor:nios2_processor|nios_system_nios2_processor_cpu:cpu|nios_system_nios2_processor_cpu_nios2_oci:the_nios_system_nios2_processor_cpu_nios2_oci|nios_system_nios2_processor_cpu_debug_slave_wrapper:the_nios_system_nios2_processor_cpu_debug_slave_wrapper|nios_system_nios2_processor_cpu_debug_slave_tck:the_nios_system_nios2_processor_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |de1soc_top|nios_system:u0|LDA_peripheral:lda_component_0|LDA_circuit:LDAC|line_drawer_control:LDAC|state
+Name state.done_state state.done_pixel state.inc state.error state.draw_pixel state.init state.set_var state.swap_10 state.swap_xy state.branch2 state.check_x0x1_steep state.branch state.check_steep state.reset 
+state.reset 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.check_steep 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.branch 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.check_x0x1_steep 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.branch2 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.swap_xy 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.swap_10 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.set_var 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.init 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.draw_pixel 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.error 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.inc 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.done_pixel 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.done_state 1 0 0 0 0 0 0 0 0 0 0 0 0 1 

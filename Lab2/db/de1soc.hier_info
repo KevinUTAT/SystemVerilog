@@ -1,0 +1,2844 @@
+|de1soc_top
+CLOCK_50 => numY[0].CLK
+CLOCK_50 => numY[1].CLK
+CLOCK_50 => numY[2].CLK
+CLOCK_50 => numY[3].CLK
+CLOCK_50 => numY[4].CLK
+CLOCK_50 => numY[5].CLK
+CLOCK_50 => numY[6].CLK
+CLOCK_50 => numY[7].CLK
+CLOCK_50 => numX[0].CLK
+CLOCK_50 => numX[1].CLK
+CLOCK_50 => numX[2].CLK
+CLOCK_50 => numX[3].CLK
+CLOCK_50 => numX[4].CLK
+CLOCK_50 => numX[5].CLK
+CLOCK_50 => numX[6].CLK
+CLOCK_50 => numX[7].CLK
+HEX0[0] <= hex_decoder:out0.segments
+HEX0[1] <= hex_decoder:out0.segments
+HEX0[2] <= hex_decoder:out0.segments
+HEX0[3] <= hex_decoder:out0.segments
+HEX0[4] <= hex_decoder:out0.segments
+HEX0[5] <= hex_decoder:out0.segments
+HEX0[6] <= hex_decoder:out0.segments
+HEX1[0] <= hex_decoder:out1.segments
+HEX1[1] <= hex_decoder:out1.segments
+HEX1[2] <= hex_decoder:out1.segments
+HEX1[3] <= hex_decoder:out1.segments
+HEX1[4] <= hex_decoder:out1.segments
+HEX1[5] <= hex_decoder:out1.segments
+HEX1[6] <= hex_decoder:out1.segments
+HEX2[0] <= hex_decoder:out2.segments
+HEX2[1] <= hex_decoder:out2.segments
+HEX2[2] <= hex_decoder:out2.segments
+HEX2[3] <= hex_decoder:out2.segments
+HEX2[4] <= hex_decoder:out2.segments
+HEX2[5] <= hex_decoder:out2.segments
+HEX2[6] <= hex_decoder:out2.segments
+HEX3[0] <= hex_decoder:out3.segments
+HEX3[1] <= hex_decoder:out3.segments
+HEX3[2] <= hex_decoder:out3.segments
+HEX3[3] <= hex_decoder:out3.segments
+HEX3[4] <= hex_decoder:out3.segments
+HEX3[5] <= hex_decoder:out3.segments
+HEX3[6] <= hex_decoder:out3.segments
+HEX4[0] <= <VCC>
+HEX4[1] <= <VCC>
+HEX4[2] <= <VCC>
+HEX4[3] <= <VCC>
+HEX4[4] <= <VCC>
+HEX4[5] <= <VCC>
+HEX4[6] <= <VCC>
+HEX5[0] <= <VCC>
+HEX5[1] <= <VCC>
+HEX5[2] <= <VCC>
+HEX5[3] <= <VCC>
+HEX5[4] <= <VCC>
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+SW[0] => numX.DATAB
+SW[0] => numY.DATAA
+SW[1] => numX.DATAB
+SW[1] => numY.DATAA
+SW[2] => numX.DATAB
+SW[2] => numY.DATAA
+SW[3] => numX.DATAB
+SW[3] => numY.DATAA
+SW[4] => numX.DATAB
+SW[4] => numY.DATAA
+SW[5] => numX.DATAB
+SW[5] => numY.DATAA
+SW[6] => numX.DATAB
+SW[6] => numY.DATAA
+SW[7] => numX.DATAB
+SW[7] => numY.DATAA
+SW[8] => ~NO_FANOUT~
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+VGA_B[0] <= <GND>
+VGA_B[1] <= <GND>
+VGA_B[2] <= <GND>
+VGA_B[3] <= <GND>
+VGA_B[4] <= <GND>
+VGA_B[5] <= <GND>
+VGA_B[6] <= <GND>
+VGA_B[7] <= <GND>
+VGA_BLANK_N <= <GND>
+VGA_CLK <= <GND>
+VGA_G[0] <= <GND>
+VGA_G[1] <= <GND>
+VGA_G[2] <= <GND>
+VGA_G[3] <= <GND>
+VGA_G[4] <= <GND>
+VGA_G[5] <= <GND>
+VGA_G[6] <= <GND>
+VGA_G[7] <= <GND>
+VGA_HS <= <GND>
+VGA_R[0] <= <GND>
+VGA_R[1] <= <GND>
+VGA_R[2] <= <GND>
+VGA_R[3] <= <GND>
+VGA_R[4] <= <GND>
+VGA_R[5] <= <GND>
+VGA_R[6] <= <GND>
+VGA_R[7] <= <GND>
+VGA_SYNC_N <= <GND>
+VGA_VS <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0
+m[0] => m[0].IN8
+m[1] => m[1].IN8
+m[2] => m[2].IN8
+m[3] => m[3].IN8
+m[4] => m[4].IN8
+m[5] => m[5].IN8
+m[6] => m[6].IN8
+m[7] => m[7].IN8
+q[0] => q_in[1].IN2
+q[1] => q_in[2].IN2
+q[2] => q_in[3].IN2
+q[3] => q_in[4].IN2
+q[4] => q_in[5].IN2
+q[5] => q_in[6].IN2
+q[6] => q_in[7].IN2
+q[7] => q_in[8].IN1
+product[0] <= p_in[1][0].DB_MAX_OUTPUT_PORT_TYPE
+product[1] <= p_in[2][0].DB_MAX_OUTPUT_PORT_TYPE
+product[2] <= p_in[3][0].DB_MAX_OUTPUT_PORT_TYPE
+product[3] <= p_in[4][0].DB_MAX_OUTPUT_PORT_TYPE
+product[4] <= p_in[5][0].DB_MAX_OUTPUT_PORT_TYPE
+product[5] <= p_in[6][0].DB_MAX_OUTPUT_PORT_TYPE
+product[6] <= p_in[7][0].DB_MAX_OUTPUT_PORT_TYPE
+product[7] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[8] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[9] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[10] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[11] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[12] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[13] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[14] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+product[15] <= SAM_row:rowCreator[7].SAM_row_inst.pout_ext
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => pin_ext[10].IN1
+pin_ext[11] => pin_ext[11].IN1
+pin_ext[12] => pin_ext[12].IN1
+pin_ext[13] => pin_ext[13].IN1
+pin_ext[14] => pin_ext[14].IN1
+pin_ext[15] => pin_ext[15].IN1
+pin_ext[16] => pin_ext[16].IN1
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= FullAdder:signExtender[9].SE_inst.S
+pout_ext[10] <= FullAdder:signExtender[10].SE_inst.S
+pout_ext[11] <= FullAdder:signExtender[11].SE_inst.S
+pout_ext[12] <= FullAdder:signExtender[12].SE_inst.S
+pout_ext[13] <= FullAdder:signExtender[13].SE_inst.S
+pout_ext[14] <= FullAdder:signExtender[14].SE_inst.S
+pout_ext[15] <= FullAdder:signExtender[15].SE_inst.S
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[9].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[10].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[11].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[12].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[13].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[14].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[0].SAM_row_inst|FullAdder:signExtender[15].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => pin_ext[10].IN1
+pin_ext[11] => pin_ext[11].IN1
+pin_ext[12] => pin_ext[12].IN1
+pin_ext[13] => pin_ext[13].IN1
+pin_ext[14] => pin_ext[14].IN1
+pin_ext[15] => pin_ext[15].IN1
+pin_ext[16] => ~NO_FANOUT~
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= FullAdder:signExtender[9].SE_inst.S
+pout_ext[10] <= FullAdder:signExtender[10].SE_inst.S
+pout_ext[11] <= FullAdder:signExtender[11].SE_inst.S
+pout_ext[12] <= FullAdder:signExtender[12].SE_inst.S
+pout_ext[13] <= FullAdder:signExtender[13].SE_inst.S
+pout_ext[14] <= FullAdder:signExtender[14].SE_inst.S
+pout_ext[15] <= <GND>
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|FullAdder:signExtender[9].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|FullAdder:signExtender[10].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|FullAdder:signExtender[11].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|FullAdder:signExtender[12].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|FullAdder:signExtender[13].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[1].SAM_row_inst|FullAdder:signExtender[14].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => pin_ext[10].IN1
+pin_ext[11] => pin_ext[11].IN1
+pin_ext[12] => pin_ext[12].IN1
+pin_ext[13] => pin_ext[13].IN1
+pin_ext[14] => pin_ext[14].IN1
+pin_ext[15] => ~NO_FANOUT~
+pin_ext[16] => ~NO_FANOUT~
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= FullAdder:signExtender[9].SE_inst.S
+pout_ext[10] <= FullAdder:signExtender[10].SE_inst.S
+pout_ext[11] <= FullAdder:signExtender[11].SE_inst.S
+pout_ext[12] <= FullAdder:signExtender[12].SE_inst.S
+pout_ext[13] <= FullAdder:signExtender[13].SE_inst.S
+pout_ext[14] <= <GND>
+pout_ext[15] <= <GND>
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|FullAdder:signExtender[9].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|FullAdder:signExtender[10].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|FullAdder:signExtender[11].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|FullAdder:signExtender[12].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[2].SAM_row_inst|FullAdder:signExtender[13].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => pin_ext[10].IN1
+pin_ext[11] => pin_ext[11].IN1
+pin_ext[12] => pin_ext[12].IN1
+pin_ext[13] => pin_ext[13].IN1
+pin_ext[14] => ~NO_FANOUT~
+pin_ext[15] => ~NO_FANOUT~
+pin_ext[16] => ~NO_FANOUT~
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= FullAdder:signExtender[9].SE_inst.S
+pout_ext[10] <= FullAdder:signExtender[10].SE_inst.S
+pout_ext[11] <= FullAdder:signExtender[11].SE_inst.S
+pout_ext[12] <= FullAdder:signExtender[12].SE_inst.S
+pout_ext[13] <= <GND>
+pout_ext[14] <= <GND>
+pout_ext[15] <= <GND>
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|FullAdder:signExtender[9].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|FullAdder:signExtender[10].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|FullAdder:signExtender[11].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[3].SAM_row_inst|FullAdder:signExtender[12].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => pin_ext[10].IN1
+pin_ext[11] => pin_ext[11].IN1
+pin_ext[12] => pin_ext[12].IN1
+pin_ext[13] => ~NO_FANOUT~
+pin_ext[14] => ~NO_FANOUT~
+pin_ext[15] => ~NO_FANOUT~
+pin_ext[16] => ~NO_FANOUT~
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= FullAdder:signExtender[9].SE_inst.S
+pout_ext[10] <= FullAdder:signExtender[10].SE_inst.S
+pout_ext[11] <= FullAdder:signExtender[11].SE_inst.S
+pout_ext[12] <= <GND>
+pout_ext[13] <= <GND>
+pout_ext[14] <= <GND>
+pout_ext[15] <= <GND>
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|FullAdder:signExtender[9].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|FullAdder:signExtender[10].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[4].SAM_row_inst|FullAdder:signExtender[11].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => pin_ext[10].IN1
+pin_ext[11] => pin_ext[11].IN1
+pin_ext[12] => ~NO_FANOUT~
+pin_ext[13] => ~NO_FANOUT~
+pin_ext[14] => ~NO_FANOUT~
+pin_ext[15] => ~NO_FANOUT~
+pin_ext[16] => ~NO_FANOUT~
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= FullAdder:signExtender[9].SE_inst.S
+pout_ext[10] <= FullAdder:signExtender[10].SE_inst.S
+pout_ext[11] <= <GND>
+pout_ext[12] <= <GND>
+pout_ext[13] <= <GND>
+pout_ext[14] <= <GND>
+pout_ext[15] <= <GND>
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|FullAdder:signExtender[9].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[5].SAM_row_inst|FullAdder:signExtender[10].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => pin_ext[10].IN1
+pin_ext[11] => ~NO_FANOUT~
+pin_ext[12] => ~NO_FANOUT~
+pin_ext[13] => ~NO_FANOUT~
+pin_ext[14] => ~NO_FANOUT~
+pin_ext[15] => ~NO_FANOUT~
+pin_ext[16] => ~NO_FANOUT~
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= FullAdder:signExtender[9].SE_inst.S
+pout_ext[10] <= <GND>
+pout_ext[11] <= <GND>
+pout_ext[12] <= <GND>
+pout_ext[13] <= <GND>
+pout_ext[14] <= <GND>
+pout_ext[15] <= <GND>
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[6].SAM_row_inst|FullAdder:signExtender[9].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst
+qjm1 => qjm1.IN1
+qj => qj.IN1
+m[0] => m[0].IN1
+m[1] => m[1].IN1
+m[2] => m[2].IN1
+m[3] => m[3].IN1
+m[4] => m[4].IN1
+m[5] => m[5].IN1
+m[6] => m[6].IN1
+m[7] => m[7].IN1
+pin_ext[0] => ~NO_FANOUT~
+pin_ext[1] => pin_ext[1].IN1
+pin_ext[2] => pin_ext[2].IN1
+pin_ext[3] => pin_ext[3].IN1
+pin_ext[4] => pin_ext[4].IN1
+pin_ext[5] => pin_ext[5].IN1
+pin_ext[6] => pin_ext[6].IN1
+pin_ext[7] => pin_ext[7].IN1
+pin_ext[8] => pin_ext[8].IN1
+pin_ext[9] => pin_ext[9].IN1
+pin_ext[10] => ~NO_FANOUT~
+pin_ext[11] => ~NO_FANOUT~
+pin_ext[12] => ~NO_FANOUT~
+pin_ext[13] => ~NO_FANOUT~
+pin_ext[14] => ~NO_FANOUT~
+pin_ext[15] => ~NO_FANOUT~
+pin_ext[16] => ~NO_FANOUT~
+pout_ext[0] <= MultiplierCell:rowMultiplier[0].MC_inst.Pout
+pout_ext[1] <= MultiplierCell:rowMultiplier[1].MC_inst.Pout
+pout_ext[2] <= MultiplierCell:rowMultiplier[2].MC_inst.Pout
+pout_ext[3] <= MultiplierCell:rowMultiplier[3].MC_inst.Pout
+pout_ext[4] <= MultiplierCell:rowMultiplier[4].MC_inst.Pout
+pout_ext[5] <= MultiplierCell:rowMultiplier[5].MC_inst.Pout
+pout_ext[6] <= MultiplierCell:rowMultiplier[6].MC_inst.Pout
+pout_ext[7] <= MultiplierCell:rowMultiplier[7].MC_inst.Pout
+pout_ext[8] <= FullAdder:signExtender[8].SE_inst.S
+pout_ext[9] <= <GND>
+pout_ext[10] <= <GND>
+pout_ext[11] <= <GND>
+pout_ext[12] <= <GND>
+pout_ext[13] <= <GND>
+pout_ext[14] <= <GND>
+pout_ext[15] <= <GND>
+pout_ext[16] <= <GND>
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|BoothEncoderCell:BEC
+Qj => minusj.IN0
+Qj => plusj.IN0
+Qjm1 => plusj.IN1
+Qjm1 => minusj.IN1
+plusj <= plusj.DB_MAX_OUTPUT_PORT_TYPE
+minusj <= minusj.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[0].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[1].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[2].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[3].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[4].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[5].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[6].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst
+M => Mout.IN0
+M => Mout.IN0
+Qplus => Mout.IN1
+Qminus => Mout.IN1
+Pin => Pin.IN1
+Cin => Cin.IN1
+signExt <= Mout.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= FullAdder:FA0.carry_out
+Pout <= FullAdder:FA0.S
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|MultiplierCell:rowMultiplier[7].MC_inst|FullAdder:FA0
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|SignedArrayMultiplier:SAM0|SAM_row:rowCreator[7].SAM_row_inst|FullAdder:signExtender[8].SE_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out0
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out1
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out2
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out3
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

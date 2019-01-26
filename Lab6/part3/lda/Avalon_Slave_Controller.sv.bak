@@ -1,0 +1,51 @@
+
+module Avalon_Slave_controller
+(
+	input clk,
+	input reset,
+	input [2:0] avs_s1_address,
+	input avs_s1_read,
+	input avs_s1_write,
+	input [31:0] avs_s1_writedata,
+	
+	output [31:0] avs_s1_readdata,
+	output avs_s1_writerequest,
+	
+	input done,
+	output logic start,
+	output logic [2:0] colour,
+	output logic [8:0] x0,
+	output logic [7:0] y0,
+	output logic [8:0] x1,
+	output logic [7:0] y1
+);
+
+logic mode;
+logic status;
+always_ff(posedge clk) begin
+	start = 1'b0;
+
+	case(avs_s1_address)
+		3'b000: mode = avs_s1_writedata[0];
+		
+		3'b001: status = avs_s1_writedata[0];
+		
+		3'b010: start = 1'b1;
+		
+		3'b011: begin
+					x0 = avs_s1_writedata[8:0];
+					y0 = avs_s1_writedata[16:9];
+				end
+				
+		3'b100: begin
+					x1 = avs_s1_writedata[8:0];
+					y1 = avs_s1_writedata[16:9];
+				end
+				
+		3'b101: colour = avs_s1_writedata[2:0];
+	endcase
+end
+
+
+
+

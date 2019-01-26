@@ -1,0 +1,149 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Dev/ECE342/Lab6/part2/tb
+vALU
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1522129979
+!i10b 1
+!s100 Shz=B`VNkJl1Zl_h2c]5?3
+IQYBZR^^B;EA<]71=mQROL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_sv_unit
+S1
+R0
+w1522123679
+8../cpu/ALU.sv
+F../cpu/ALU.sv
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1522129979.000000
+!s107 ../cpu/ALU.sv|
+!s90 -reportprogress|300|../cpu/ALU.sv|
+!i113 1
+Z4 tCvgOpt 0
+n@a@l@u
+vcontrol_masterline
+R1
+Z5 !s110 1522129980
+!i10b 1
+!s100 bC_WQUzZhYG3VFZ1gIJJ@2
+IlYk=]ZIboS7=<NY?SzClD0
+R2
+!s105 control_masterline_sv_unit
+S1
+R0
+w1522127032
+8../cpu/control_masterline.sv
+F../cpu/control_masterline.sv
+L0 2
+R3
+r1
+!s85 0
+31
+Z6 !s108 1522129980.000000
+!s107 ../cpu/control_masterline.sv|
+!s90 -reportprogress|300|../cpu/control_masterline.sv|
+!i113 1
+R4
+vcpu
+R1
+Z7 !s110 1522129981
+!i10b 1
+!s100 3iidf2;>zS_@VQ1K;NGfa0
+I1;@V22MCfCa@1_f95;HeX0
+R2
+!s105 cpu_sv_unit
+S1
+R0
+w1522010449
+8../cpu/cpu.sv
+F../cpu/cpu.sv
+L0 2
+R3
+r1
+!s85 0
+31
+Z8 !s108 1522129981.000000
+!s107 ../cpu/cpu.sv|
+!s90 -reportprogress|300|../cpu/cpu.sv|
+!i113 1
+R4
+vdata_masterline
+R1
+R5
+!i10b 1
+!s100 Ua@Y1L4VPZ>i0MUYUCfZE1
+Id0hPK0=P3N;LB=lzbmng51
+R2
+!s105 data_masterline_sv_unit
+S1
+R0
+w1522129952
+8../cpu/data_masterline.sv
+F../cpu/data_masterline.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R6
+!s107 ../cpu/data_masterline.sv|
+!s90 -reportprogress|300|../cpu/data_masterline.sv|
+!i113 1
+R4
+vreg_file
+R1
+R7
+!i10b 1
+!s100 ZC[oPgN5>ao:=`]eZ?W;<3
+IDdEOUD;KBUL`SF2OkLZLc0
+R2
+!s105 reg_file_sv_unit
+S1
+R0
+w1521599870
+8../cpu/reg_file.sv
+F../cpu/reg_file.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R6
+!s107 ../cpu/reg_file.sv|
+!s90 -reportprogress|300|../cpu/reg_file.sv|
+!i113 1
+R4
+vtb
+R1
+R7
+!i10b 1
+!s100 Fl4HmS9OEbXWQRbW[co_[0
+I10J7OOX>j5EG[2WNmX[Fk1
+R2
+!s105 tb_sv_unit
+S1
+R0
+w1522120899
+8tb.sv
+Ftb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 tb.sv|
+!s90 -reportprogress|300|tb.sv|
+!i113 1
+R4

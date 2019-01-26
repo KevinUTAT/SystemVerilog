@@ -1,0 +1,26 @@
+1010	// 0000: mvi r0, 0x10
+1016	// 0002: mvhi r0, 0x10
+0030	// 0004: mvi r1, 0x00
+1036	// 0006: mvhi r1, 0x10
+2050	// 0008: mvi r2, 0x20
+1056	// 000a: mvhi r2, 0x10
+ff70	// 000c: mvi r3, 0xFF
+0076	// 000e: mvhi r3, 0x00
+0265	// 0010: 	st r3, r2
+00c4	// 0012: 	ld r6,r0
+01c5	// 0014: 	st r6, r1
+0171	// 0016: 	addi r3, 1
+01d3	// 0018: 	cmpi r6, 1
+0059	// 001a: 	jz slower
+03d3	// 001c: 	cmpi r6, 3
+0079	// 001e: 	jz faster
+ff90	// 0020: 	mvi r4, 0xFF
+ff96	// 0022: 	mvhi r4, 0xFF
+0058	// 0024: 	j count_loop
+ff90	// 0026: 	mvi r4, 0xFF
+0096	// 0028: 	mvhi r4, 0x00
+0192	// 002a: 	subi r4, 1
+0093	// 002c: 	cmpi r4, 0
+fe19	// 002e: 	jz inf_loop
+ff98	// 0030: 	j count_loop
+fff8	// 0032: inf: j inf

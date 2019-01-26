@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at control_masterline.sv(95): always construct contains both blocking and non-blocking assignments File: C:/Dev/ECE342/Lab6/part1/control_masterline.sv Line: 95
+Info (10281): Verilog HDL Declaration information at control_masterline.sv(6): object "reset" differs only in case from object "Reset" in the same scope File: C:/Dev/ECE342/Lab6/part1/control_masterline.sv Line: 6

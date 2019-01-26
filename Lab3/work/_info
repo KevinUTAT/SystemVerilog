@@ -1,0 +1,146 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Dev/ECE342/Lab3
+vde1soc_top
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1517786275
+!i10b 1
+!s100 Ki4gibSZg5L1@e@d0fni32
+Ibg>R3HdXjL=b7R:]H71Jo2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 de1soc_top_sv_unit
+S1
+R0
+w1517786244
+8de1soc_top.sv
+Fde1soc_top.sv
+L0 1
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1517786275.000000
+!s107 de1soc_top.sv|
+!s90 -reportprogress|300|de1soc_top.sv|
+!i113 1
+vLDA_tb
+R1
+!s110 1517972914
+!i10b 1
+!s100 _h7bQkc<0dgVQb268^<cK1
+Io>oIaVPMPkRhY4Ra2Q]To1
+R2
+!s105 LDA_tb_sv_unit
+S1
+R0
+w1517972891
+8LDA_tb.sv
+FLDA_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1517972914.000000
+!s107 LDA_tb.sv|
+!s90 -reportprogress|300|LDA_tb.sv|
+!i113 1
+n@l@d@a_tb
+vline_drawer_control
+R1
+!s110 1517975431
+!i10b 1
+!s100 `g@BFz3FzmF>OU5`=eUJh3
+IGgGnO1c6d]U2nGUI_eGMf3
+R2
+!s105 line_drawer_control_sv_unit
+S1
+R0
+w1517975412
+8line_drawer_control.sv
+Fline_drawer_control.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1517975431.000000
+!s107 line_drawer_control.sv|
+!s90 -reportprogress|300|line_drawer_control.sv|
+!i113 1
+vline_drawer_data
+R1
+!s110 1517975242
+!i10b 1
+!s100 SIc^hiH7Az3mzlVzK8E7:1
+Io_P;S5nSmL>OCT;=K5=W62
+R2
+!s105 line_drawer_data_sv_unit
+S1
+R0
+w1517973678
+8line_drawer_data.sv
+Fline_drawer_data.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1517975242.000000
+!s107 line_drawer_data.sv|
+!s90 -reportprogress|300|-suppress|7061|line_drawer_data.sv|
+!i113 1
+o-suppress 7061
+vUI_control
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1517778266
+!i10b 1
+!s100 XST^24h0C@4LVZioV:N4I0
+InTE9]_J78P7X^ajeUJMeW1
+R2
+!s105 UI_control_sv_unit
+S1
+dW:/ECE342/Lab3
+w1517778259
+8UI_control.sv
+FUI_control.sv
+L0 4
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1517778266.000000
+!s107 UI_control.sv|
+!s90 -reportprogress|300|UI_control.sv|
+!i113 1
+tCvgOpt 0
+n@u@i_control
+vvga_bmp
+R1
+!s110 1517949622
+!i10b 1
+!s100 z:WYCAHS6D]L?KFl2bLlC1
+I]33_>m59jVczddCVO9Pz?2
+R2
+!s105 vga_bmp_sv_unit
+S1
+R0
+w1517771882
+8vga_bmp.sv
+Fvga_bmp.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1517949622.000000
+!s107 vga_bmp.sv|
+!s90 -reportprogress|300|vga_bmp.sv|
+!i113 1

@@ -1,0 +1,1644 @@
+|de1soc_top
+CLOCK_50 => ~NO_FANOUT~
+HEX0[0] << hex_decoder:out0.segments
+HEX0[1] << hex_decoder:out0.segments
+HEX0[2] << hex_decoder:out0.segments
+HEX0[3] << hex_decoder:out0.segments
+HEX0[4] << hex_decoder:out0.segments
+HEX0[5] << hex_decoder:out0.segments
+HEX0[6] << hex_decoder:out0.segments
+HEX1[0] << hex_decoder:out1.segments
+HEX1[1] << hex_decoder:out1.segments
+HEX1[2] << hex_decoder:out1.segments
+HEX1[3] << hex_decoder:out1.segments
+HEX1[4] << hex_decoder:out1.segments
+HEX1[5] << hex_decoder:out1.segments
+HEX1[6] << hex_decoder:out1.segments
+HEX2[0] << hex_decoder:out2.segments
+HEX2[1] << hex_decoder:out2.segments
+HEX2[2] << hex_decoder:out2.segments
+HEX2[3] << hex_decoder:out2.segments
+HEX2[4] << hex_decoder:out2.segments
+HEX2[5] << hex_decoder:out2.segments
+HEX2[6] << hex_decoder:out2.segments
+HEX3[0] << hex_decoder:out3.segments
+HEX3[1] << hex_decoder:out3.segments
+HEX3[2] << hex_decoder:out3.segments
+HEX3[3] << hex_decoder:out3.segments
+HEX3[4] << hex_decoder:out3.segments
+HEX3[5] << hex_decoder:out3.segments
+HEX3[6] << hex_decoder:out3.segments
+HEX4[0] << <VCC>
+HEX4[1] << <VCC>
+HEX4[2] << <VCC>
+HEX4[3] << <VCC>
+HEX4[4] << <VCC>
+HEX4[5] << <VCC>
+HEX4[6] << <VCC>
+HEX5[0] << <VCC>
+HEX5[1] << <VCC>
+HEX5[2] << <VCC>
+HEX5[3] << <VCC>
+HEX5[4] << <VCC>
+HEX5[5] << <VCC>
+HEX5[6] << <VCC>
+KEY[0] => numY[0].CLK
+KEY[0] => numY[1].CLK
+KEY[0] => numY[2].CLK
+KEY[0] => numY[3].CLK
+KEY[0] => numY[4].CLK
+KEY[0] => numY[5].CLK
+KEY[0] => numY[6].CLK
+KEY[0] => numY[7].CLK
+KEY[0] => numX[0].CLK
+KEY[0] => numX[1].CLK
+KEY[0] => numX[2].CLK
+KEY[0] => numX[3].CLK
+KEY[0] => numX[4].CLK
+KEY[0] => numX[5].CLK
+KEY[0] => numX[6].CLK
+KEY[0] => numX[7].CLK
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+SW[0] => numX.DATAB
+SW[0] => numY.DATAA
+SW[1] => numX.DATAB
+SW[1] => numY.DATAA
+SW[2] => numX.DATAB
+SW[2] => numY.DATAA
+SW[3] => numX.DATAB
+SW[3] => numY.DATAA
+SW[4] => numX.DATAB
+SW[4] => numY.DATAA
+SW[5] => numX.DATAB
+SW[5] => numY.DATAA
+SW[6] => numX.DATAB
+SW[6] => numY.DATAA
+SW[7] => numX.DATAB
+SW[7] => numY.DATAA
+SW[8] => ~NO_FANOUT~
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numX.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+SW[9] => numY.OUTPUTSELECT
+VGA_B[0] << <GND>
+VGA_B[1] << <GND>
+VGA_B[2] << <GND>
+VGA_B[3] << <GND>
+VGA_B[4] << <GND>
+VGA_B[5] << <GND>
+VGA_B[6] << <GND>
+VGA_B[7] << <GND>
+VGA_BLANK_N << <GND>
+VGA_CLK << <GND>
+VGA_G[0] << <GND>
+VGA_G[1] << <GND>
+VGA_G[2] << <GND>
+VGA_G[3] << <GND>
+VGA_G[4] << <GND>
+VGA_G[5] << <GND>
+VGA_G[6] << <GND>
+VGA_G[7] << <GND>
+VGA_HS << <GND>
+VGA_R[0] << <GND>
+VGA_R[1] << <GND>
+VGA_R[2] << <GND>
+VGA_R[3] << <GND>
+VGA_R[4] << <GND>
+VGA_R[5] << <GND>
+VGA_R[6] << <GND>
+VGA_R[7] << <GND>
+VGA_SYNC_N << <GND>
+VGA_VS << <GND>
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0
+M[0] => M[0].IN8
+M[1] => M[1].IN8
+M[2] => M[2].IN8
+M[3] => M[3].IN8
+M[4] => M[4].IN8
+M[5] => M[5].IN8
+M[6] => M[6].IN8
+M[7] => M[7].IN8
+Q[0] => Q[0].IN1
+Q[1] => Q[1].IN1
+Q[2] => Q[2].IN1
+Q[3] => Q[3].IN1
+Q[4] => Q[4].IN1
+Q[5] => Q[5].IN1
+Q[6] => Q[6].IN1
+Q[7] => Q[7].IN1
+product[0] <= partial[1][0].DB_MAX_OUTPUT_PORT_TYPE
+product[1] <= partial[2][0].DB_MAX_OUTPUT_PORT_TYPE
+product[2] <= partial[3][0].DB_MAX_OUTPUT_PORT_TYPE
+product[3] <= partial[4][0].DB_MAX_OUTPUT_PORT_TYPE
+product[4] <= partial[5][0].DB_MAX_OUTPUT_PORT_TYPE
+product[5] <= partial[6][0].DB_MAX_OUTPUT_PORT_TYPE
+product[6] <= partial[7][0].DB_MAX_OUTPUT_PORT_TYPE
+product[7] <= CSA_row:multiplier[7].CSA_inst.p_out
+product[8] <= FullAdder:fastAdder[0].fastA_inst.S
+product[9] <= FullAdder:fastAdder[1].fastA_inst.S
+product[10] <= FullAdder:fastAdder[2].fastA_inst.S
+product[11] <= FullAdder:fastAdder[3].fastA_inst.S
+product[12] <= FullAdder:fastAdder[4].fastA_inst.S
+product[13] <= FullAdder:fastAdder[5].fastA_inst.S
+product[14] <= FullAdder:fastAdder[6].fastA_inst.S
+product[15] <= FullAdder:fastA_last.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[0].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[1].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[2].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[3].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[4].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[5].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[6].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst
+carry_in[0] => carry_in[0].IN1
+carry_in[1] => carry_in[1].IN1
+carry_in[2] => carry_in[2].IN1
+carry_in[3] => carry_in[3].IN1
+carry_in[4] => carry_in[4].IN1
+carry_in[5] => carry_in[5].IN1
+carry_in[6] => carry_in[6].IN1
+carry_in[7] => carry_in[7].IN1
+p_in[0] => ~NO_FANOUT~
+p_in[1] => partialIn[1].IN1
+p_in[2] => partialIn[2].IN1
+p_in[3] => partialIn[3].IN1
+p_in[4] => partialIn[4].IN1
+p_in[5] => partialIn[5].IN1
+p_in[6] => partialIn[6].IN1
+p_in[7] => partialIn[7].IN1
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+Bi => comb.IN0
+A[0] => comb.IN1
+A[1] => comb.IN1
+A[2] => comb.IN1
+A[3] => comb.IN1
+A[4] => comb.IN1
+A[5] => comb.IN1
+A[6] => comb.IN1
+A[7] => comb.IN1
+carry_out[0] <= FullAdder:rowMultiplier[0].FA_inst.carry_out
+carry_out[1] <= FullAdder:rowMultiplier[1].FA_inst.carry_out
+carry_out[2] <= FullAdder:rowMultiplier[2].FA_inst.carry_out
+carry_out[3] <= FullAdder:rowMultiplier[3].FA_inst.carry_out
+carry_out[4] <= FullAdder:rowMultiplier[4].FA_inst.carry_out
+carry_out[5] <= FullAdder:rowMultiplier[5].FA_inst.carry_out
+carry_out[6] <= FullAdder:rowMultiplier[6].FA_inst.carry_out
+carry_out[7] <= FullAdder:rowMultiplier[7].FA_inst.carry_out
+p_out[0] <= FullAdder:rowMultiplier[0].FA_inst.S
+p_out[1] <= FullAdder:rowMultiplier[1].FA_inst.S
+p_out[2] <= FullAdder:rowMultiplier[2].FA_inst.S
+p_out[3] <= FullAdder:rowMultiplier[3].FA_inst.S
+p_out[4] <= FullAdder:rowMultiplier[4].FA_inst.S
+p_out[5] <= FullAdder:rowMultiplier[5].FA_inst.S
+p_out[6] <= FullAdder:rowMultiplier[6].FA_inst.S
+p_out[7] <= FullAdder:rowMultiplier[7].FA_inst.S
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[0].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[1].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[2].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[3].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[4].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[5].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[6].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|CSA_row:multiplier[7].CSA_inst|FullAdder:rowMultiplier[7].FA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastAdder[0].fastA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastAdder[1].fastA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastAdder[2].fastA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastAdder[3].fastA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastAdder[4].fastA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastAdder[5].fastA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastAdder[6].fastA_inst
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|CarrySaveMultiplier:CSM0|FullAdder:fastA_last
+A => S.IN0
+A => carry_out.IN0
+A => carry_out.IN0
+B => S.IN1
+B => carry_out.IN1
+B => carry_out.IN0
+carry_in => S.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out0
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out1
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out2
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:out3
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

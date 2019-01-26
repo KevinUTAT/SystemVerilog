@@ -1,0 +1,12 @@
+mvi r0, 0xef
+mvhi r0, 0xbe
+mvi r1, 0x20
+mvhi r1, 0x10
+st r0, r1
+mvi r3, 0x10
+mvhi r3, 0x10
+mvi r4, 0x00
+mvhi r4, 0x10
+ld r2, r3
+st r2, r4
+j -3

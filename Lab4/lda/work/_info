@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/Lab4_new_new_Saturday/Lab4/lda
+vAvalon_Slave_controller
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1518306307
+!i10b 1
+!s100 4g0X1YP`<NB_QBQJ6EVP92
+Id;aI7C?Wd8[;cPf:N>[AB0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Avalon_Slave_Controller_sv_unit
+S1
+R0
+w1518306301
+8Avalon_Slave_Controller.sv
+FAvalon_Slave_Controller.sv
+L0 2
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1518306307.000000
+!s107 Avalon_Slave_Controller.sv|
+!s90 -reportprogress|300|Avalon_Slave_Controller.sv|
+!i113 1
+n@avalon_@slave_controller
+vLDA_circuit
+R1
+!s110 1518306347
+!i10b 1
+!s100 ]2YzA@mMOb2]OGo;H>W<E0
+IfCd50Ag26FbBz:G`de25a1
+R2
+!s105 LDA_circuit_sv_unit
+S1
+R0
+w1518306344
+8LDA_circuit.sv
+FLDA_circuit.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1518306347.000000
+!s107 LDA_circuit.sv|
+!s90 -reportprogress|300|LDA_circuit.sv|
+!i113 1
+n@l@d@a_circuit
+vLDA_peripheral
+R1
+!s110 1518306435
+!i10b 1
+!s100 3PfPeM7g9EX@=9a:SnznK3
+IEzVCBI9ROokbo8_LX`R>Y0
+R2
+!s105 LDA_peripheral_sv_unit
+S1
+R0
+w1518306432
+8LDA_peripheral.sv
+FLDA_peripheral.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1518306435.000000
+!s107 LDA_peripheral.sv|
+!s90 -reportprogress|300|LDA_peripheral.sv|
+!i113 1
+n@l@d@a_peripheral

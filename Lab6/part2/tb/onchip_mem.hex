@@ -1,0 +1,23 @@
+00d0	// 0000: mvi r6, 0x00 	
+1010	// 0002: mvi r0, 0x10	
+1016	// 0004: mvhi r0, 0x10
+0024	// 0006: ld r1, r0
+2010	// 0008: mvi r0, 0x20
+1016	// 000a: mvhi r0, 0x10
+00c5	// 000c: st r6, r0
+0090	// 000e: mvi r4, 0x00
+ffb0	// 0010: mvi r5, 0xff	
+ffb6	// 0012: mvhi r5, 0xff
+01b2	// 0014: subi r5, 1
+00b3	// 0016: cmpi r5, 0
+ffb9	// 0018: jz delay0
+0191	// 001a: addi r4, 1
+0183	// 001c: cmp r4, r1
+ff1a	// 001e: jn delay1
+ff70	// 0020: mvi r3, 0xff
+ff76	// 0022: mvhi r3, 0xff
+0172	// 0024: subi r3, 1
+0073	// 0026: cmpi r3, 0
+ffb9	// 0028: jz delay2
+01d1	// 002a: addi r6, 1
+fd58	// 002c: j start
